@@ -9,7 +9,7 @@ import { sendEmail } from "@/ecommerch/email/send";
 
 const VerifyEmailSchema = z.object({
   email: z
-    .email()
+    .string()
     .trim()
     .transform((email) => email.toLowerCase()),
 });
