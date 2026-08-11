@@ -7,11 +7,17 @@ import { InstagramIcon } from "@/components/efferd/instagram-icon";
 import { LinkedinIcon } from "@/components/efferd/linkedin-icon";
 import { XIcon } from "@/components/efferd/x-icon";
 import { Button } from "@/components/ui/button";
+import { Logo } from "./logo";
 
 export function Footer() {
 	return (
 		<footer className="border-t">
+					
 			<div className="mx-auto max-w-6xl px-4 lg:px-6">
+								<div className="flex items-center justify-center lg:justify-start lg:py-8">
+									<Logo className="mt-6 lg:mt-4" />
+								</div>
+
 				{/* Grid container with headings and links */}
 				<div className="grid grid-cols-2 gap-8 py-8 md:grid-cols-4">
 					{footerLinks.map((item) => (
@@ -58,7 +64,7 @@ export function Footer() {
 				</div>
 				<div className="h-px bg-border" />
 				<div className="py-4 text-center text-muted-foreground text-xs">
-					<p>&copy; {new Date().getFullYear()} efferd, All rights reserved</p>
+					<p>&copy; {new Date().getFullYear()} Mr.Tripy, All rights reserved</p>
 				</div>
 			</div>
 		</footer>

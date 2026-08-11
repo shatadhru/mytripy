@@ -41,7 +41,7 @@ export function MobileNav() {
 							))}
 						</div>
 						<div className="mt-12 flex flex-col gap-2">
-							<Button className="w-full" variant="outline">
+					<Button size="sm" variant="outline"   onClick={() => (window.location.href = "/auth/login")}>
 								Sign In
 							</Button>
 							<Button className="w-full">Get Started</Button>
