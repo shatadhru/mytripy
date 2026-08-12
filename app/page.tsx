@@ -21,6 +21,8 @@ function page() {
       <Trending />
             <Separator />
 <PackageSlider />
+            <Separator />
+
      </div>
       <Footer />
     </div>
