@@ -4,6 +4,10 @@ import HeroSection from './components/hero/HeroSection';
 import OfferSection from './components/offer/OfferSection';
 import { Footer } from '@/components/efferd/footer';
 import PopularDestinations from './components/populardestinations/PopluarDestiantionos';
+import { Separator } from "@/components/ui/separator"
+import Trending from './components/Flights/page';
+import PackageSlider from './components/OurPackages/page';
+
 
 function page() {
   return (
@@ -13,6 +17,10 @@ function page() {
        <HeroSection />
        <OfferSection />
        <PopularDestinations />
+      <Separator />
+      <Trending />
+            <Separator />
+<PackageSlider />
      </div>
       <Footer />
     </div>

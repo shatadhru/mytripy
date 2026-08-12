@@ -1,6 +1,8 @@
 // This is the configuration file for the e-commerce application.
 // You can customize your application settings here.
 
+import Dashboard from "./ecommerch/ui/admin/pages/Dashboard";
+
 const ecomconfig = {
   baseurl: "http://localhost:3000",
 
@@ -11,6 +13,40 @@ const ecomconfig = {
       "A sample e-commerce application built with Next.js and TypeScript.",
   },
 
+    adminurl: {
+    routes: [
+      {
+        title: "Dashboard",
+        href: "/admin",
+        icon: "LayoutDashboard",
+        page: "Dashboard",
+      },
+      {
+        title: "Products",
+        href: "/admin/products",
+        icon: "Package",
+        page: "Product",
+      },
+      {
+        title: "Orders",
+        href: "/admin/orders",
+        icon: "ShoppingCart",
+        page: "Orders",
+      },
+      {
+        title: "Customers",
+        href: "/admin/customers",
+        icon: "Users",
+        page: "Customers",
+      },
+      {
+        title: "Settings",
+        href: "/admin/settings",
+        icon: "Settings",
+        page: "Settings",
+      },
+    ],
+  },
   database: {
     provider: "mongodb",
     uri: process.env.MONGODB_URI ?? "mongodb://localhost:27017/ecommerce",

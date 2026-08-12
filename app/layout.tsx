@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Instrument_Sans, JetBrains_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Instrument_Sans, JetBrains_Mono, DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toast"
@@ -7,9 +7,9 @@ import NextTopLoader from "nextjs-toploader";
 
 
 
-const jetbrainsMonoHeading = JetBrains_Mono({subsets:['latin'],variable:'--font-heading'});
+const outfitHeading = Outfit({subsets:['latin'],variable:'--font-heading'});
 
-const instrumentSans = Instrument_Sans({subsets:['latin'],variable:'--font-sans'});
+const dmSans = DM_Sans({subsets:['latin'],variable:'--font-sans'});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", instrumentSans.variable, jetbrainsMonoHeading.variable)}
+      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", dmSans.variable, outfitHeading.variable)}
     >
 
       <body className="min-h-full flex flex-col">
